@@ -1,0 +1,39 @@
+---
+# Playbook to Backup all config and produce show outputs
+
+- hosts: localhost
+  gather_facts: false
+  
+  tasks:
+   - name: Get ansible date/time facts
+     setup:
+       filter: "ansible_date_time"
+       gather_subset: "!all"
+   - name: Store DTG as fact
+     set_fact:
+       DTG: "{{ ansible_date_time.date }}"
+
+   - name: Create Directory {{hostvars.localhost.DTG}} 
+     file: 
+      path: ~/tmp/{{hostvars.localhost.DTG}}
+      state: directory
+
+- hosts: 172.29.129.100
+  connection: local
+  gather_facts: false
+
+  tasks:
+   - name: Show Run on Device
+     ios_command:
+       commands:
+         - show run
+     register: config
+
+   - name: configure top level configuration
+     cisco.ios.ios_config:
+       lines: hostname {{ inventory_hostname }}
+
+   - name: Save output to /tmp
+     copy:
+       content: "{{config.stdout[0]}}"
+       dest: "~/tmp/{{hostvars.localhost.DTG}}/{{inventory_hostname}}-{{hostvars.localhost.DTG}}-config.txt"

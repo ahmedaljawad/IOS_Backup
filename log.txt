@@ -1,0 +1,146 @@
+2021-08-12 14:16:25,233 p=700 u=ahmedaljawad n=ansible | 10.14.2.199 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.14.2.199 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1",
+    "unreachable": true
+}
+2021-08-12 14:27:37,172 p=714 u=ahmedaljawad n=ansible | 10.14.2.199 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.14.2.199 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1",
+    "unreachable": true
+}
+2021-08-14 18:06:51,799 p=241 u=ahmedaljawad n=ansible | [WARNING]: Unable to parse /home/ahmedaljawad/AnsibleBasic/hosts as an inventory source
+
+2021-08-14 18:06:51,800 p=241 u=ahmedaljawad n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-08-14 18:06:51,859 p=241 u=ahmedaljawad n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-08-14 18:06:51,860 p=241 u=ahmedaljawad n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: 10.14.2.199
+
+2021-08-14 18:07:20,358 p=248 u=ahmedaljawad n=ansible | 10.14.2.199 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: C\r\nThis Commercial Metals Company system is exclusively for use by authorized individuals. \r\nUse of this system constitutes an expressed consent to electronic monitoring at all times.\r\nsrv_ansible@10.14.2.199: Permission denied (publickey,keyboard-interactive,password).",
+    "unreachable": true
+}
+2021-08-27 11:17:53,634 p=90 u=ahmedaljawad n=ansible | [WARNING]: Unable to parse /home/ahmedaljawad/AnsibleBasic/hosts as an inventory source
+
+2021-08-27 11:17:53,635 p=90 u=ahmedaljawad n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-08-27 11:17:53,638 p=90 u=ahmedaljawad n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2021-08-27 11:17:53,638 p=90 u=ahmedaljawad n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: version
+
+2021-08-27 11:17:53,678 p=90 u=ahmedaljawad n=ansible | ERROR! No argument passed to command module
+2021-08-27 12:11:48,282 p=345 u=ahmedaljawad n=ansible | ERROR! the playbook: - could not be found
+2021-08-27 12:12:20,849 p=350 u=ahmedaljawad n=ansible | [WARNING]: Unable to parse /home/ahmedaljawad/AnsibleBasic/hosts as an inventory source
+
+2021-08-27 12:12:20,850 p=350 u=ahmedaljawad n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-08-27 12:12:20,888 p=350 u=ahmedaljawad n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2021-08-27 12:12:22,234 p=350 u=ahmedaljawad n=ansible | PLAY [localhost] *******************************************************************************************************
+2021-08-27 12:12:22,324 p=350 u=ahmedaljawad n=ansible | TASK [Get ansible date/time facts] *************************************************************************************
+2021-08-27 12:12:26,750 p=350 u=ahmedaljawad n=ansible | ok: [localhost]
+2021-08-27 12:12:26,766 p=350 u=ahmedaljawad n=ansible | TASK [Store DTG as fact] ***********************************************************************************************
+2021-08-27 12:12:26,797 p=350 u=ahmedaljawad n=ansible | ok: [localhost]
+2021-08-27 12:12:26,813 p=350 u=ahmedaljawad n=ansible | TASK [Create Directory 2021-08-27] *************************************************************************************
+2021-08-27 12:12:28,558 p=350 u=ahmedaljawad n=ansible | changed: [localhost]
+2021-08-27 12:12:28,571 p=350 u=ahmedaljawad n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: eve
+
+2021-08-27 12:12:28,574 p=350 u=ahmedaljawad n=ansible | PLAY [eve] *************************************************************************************************************
+2021-08-27 12:12:28,575 p=350 u=ahmedaljawad n=ansible | skipping: no hosts matched
+2021-08-27 12:12:28,577 p=350 u=ahmedaljawad n=ansible | PLAY RECAP *************************************************************************************************************
+2021-08-27 12:12:28,578 p=350 u=ahmedaljawad n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-29 15:24:57,275 p=310 u=ahmedaljawad n=ansible | PLAY [localhost] ********************************************************************************************************************************
+2021-08-29 15:24:57,481 p=310 u=ahmedaljawad n=ansible | TASK [Get ansible date/time facts] **************************************************************************************************************
+2021-08-29 15:25:01,792 p=310 u=ahmedaljawad n=ansible | ok: [localhost]
+2021-08-29 15:25:01,808 p=310 u=ahmedaljawad n=ansible | TASK [Store DTG as fact] ************************************************************************************************************************
+2021-08-29 15:25:02,189 p=310 u=ahmedaljawad n=ansible | ok: [localhost]
+2021-08-29 15:25:02,246 p=310 u=ahmedaljawad n=ansible | TASK [Create Directory 2021-08-29] **************************************************************************************************************
+2021-08-29 15:25:04,200 p=310 u=ahmedaljawad n=ansible | changed: [localhost]
+2021-08-29 15:25:04,206 p=310 u=ahmedaljawad n=ansible | PLAY [172.29.129.100] ***************************************************************************************************************************
+2021-08-29 15:25:04,213 p=310 u=ahmedaljawad n=ansible | TASK [Show Run on Device] ***********************************************************************************************************************
+2021-08-29 15:25:05,659 p=375 u=ahmedaljawad n=ansible | network_os is set to ios
+2021-08-29 15:25:05,756 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | starting thread (client mode): 0x14b7c040
+2021-08-29 15:25:05,757 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Local version/idstring: SSH-2.0-paramiko_2.7.2
+2021-08-29 15:25:05,851 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Remote version/idstring: SSH-1.99-Cisco-1.25
+2021-08-29 15:25:05,851 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Connected (version 1.99, client Cisco-1.25)
+2021-08-29 15:25:05,902 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2021-08-29 15:25:05,902 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Kex agreed: diffie-hellman-group1-sha1
+2021-08-29 15:25:05,902 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | HostKey agreed: ssh-rsa
+2021-08-29 15:25:05,902 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Cipher agreed: aes128-cbc
+2021-08-29 15:25:05,902 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | MAC agreed: hmac-sha1
+2021-08-29 15:25:05,902 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Compression agreed: none
+2021-08-29 15:25:06,009 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2021-08-29 15:25:06,009 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Switch to new keys ...
+2021-08-29 15:25:06,310 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | userauth is OK
+2021-08-29 15:25:08,475 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Authentication (password) failed.
+2021-08-29 15:25:10,524 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | starting thread (client mode): 0x14300c10
+2021-08-29 15:25:10,524 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Local version/idstring: SSH-2.0-paramiko_2.7.2
+2021-08-29 15:25:10,606 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Remote version/idstring: SSH-1.99-Cisco-1.25
+2021-08-29 15:25:10,606 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Connected (version 1.99, client Cisco-1.25)
+2021-08-29 15:25:10,681 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2021-08-29 15:25:10,681 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Kex agreed: diffie-hellman-group1-sha1
+2021-08-29 15:25:10,681 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | HostKey agreed: ssh-rsa
+2021-08-29 15:25:10,681 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Cipher agreed: aes128-cbc
+2021-08-29 15:25:10,682 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | MAC agreed: hmac-sha1
+2021-08-29 15:25:10,682 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Compression agreed: none
+2021-08-29 15:25:10,772 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2021-08-29 15:25:10,773 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Switch to new keys ...
+2021-08-29 15:25:11,079 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | userauth is OK
+2021-08-29 15:25:13,112 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | Authentication (password) failed.
+2021-08-29 15:25:15,662 p=380 u=ahmedaljawad n=ansible | command timeout triggered, timeout value is 10 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2021-08-29 15:25:15,731 p=310 u=ahmedaljawad n=ansible | fatal: [172.29.129.100]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 10 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2021-08-29 15:25:15,733 p=310 u=ahmedaljawad n=ansible | PLAY RECAP **************************************************************************************************************************************
+2021-08-29 15:25:15,734 p=310 u=ahmedaljawad n=ansible | 172.29.129.100             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-29 15:25:15,734 p=310 u=ahmedaljawad n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-29 15:25:20,720 p=380 u=ahmedaljawad n=ansible | persistent connection idle timeout triggered, timeout value is 5 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2021-08-29 15:25:20,833 p=380 u=ahmedaljawad n=ansible | shutdown complete
+2021-08-29 15:25:20,835 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | EOF in transport thread
+2021-08-29 15:25:20,835 p=380 u=ahmedaljawad n=p=380 u=ahmedaljawad | paramiko [172.29.129.100] | EOF in transport thread
+2021-08-29 15:25:29,286 p=386 u=ahmedaljawad n=ansible | PLAY [localhost] ********************************************************************************************************************************
+2021-08-29 15:25:29,317 p=386 u=ahmedaljawad n=ansible | TASK [Get ansible date/time facts] **************************************************************************************************************
+2021-08-29 15:25:32,896 p=386 u=ahmedaljawad n=ansible | ok: [localhost]
+2021-08-29 15:25:32,903 p=386 u=ahmedaljawad n=ansible | TASK [Store DTG as fact] ************************************************************************************************************************
+2021-08-29 15:25:32,989 p=386 u=ahmedaljawad n=ansible | ok: [localhost]
+2021-08-29 15:25:33,047 p=386 u=ahmedaljawad n=ansible | TASK [Create Directory 2021-08-29] **************************************************************************************************************
+2021-08-29 15:25:34,990 p=386 u=ahmedaljawad n=ansible | ok: [localhost]
+2021-08-29 15:25:34,996 p=386 u=ahmedaljawad n=ansible | PLAY [172.29.129.100] ***************************************************************************************************************************
+2021-08-29 15:25:35,003 p=386 u=ahmedaljawad n=ansible | TASK [Show Run on Device] ***********************************************************************************************************************
+2021-08-29 15:25:36,307 p=451 u=ahmedaljawad n=ansible | network_os is set to ios
+2021-08-29 15:25:36,400 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | starting thread (client mode): 0x3d35d040
+2021-08-29 15:25:36,403 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Local version/idstring: SSH-2.0-paramiko_2.7.2
+2021-08-29 15:25:36,505 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Remote version/idstring: SSH-1.99-Cisco-1.25
+2021-08-29 15:25:36,505 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Connected (version 1.99, client Cisco-1.25)
+2021-08-29 15:25:36,537 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2021-08-29 15:25:36,537 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Kex agreed: diffie-hellman-group1-sha1
+2021-08-29 15:25:36,537 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | HostKey agreed: ssh-rsa
+2021-08-29 15:25:36,538 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Cipher agreed: aes128-cbc
+2021-08-29 15:25:36,538 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | MAC agreed: hmac-sha1
+2021-08-29 15:25:36,538 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Compression agreed: none
+2021-08-29 15:25:36,617 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2021-08-29 15:25:36,617 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Switch to new keys ...
+2021-08-29 15:25:36,881 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | userauth is OK
+2021-08-29 15:25:36,920 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Authentication (password) successful!
+2021-08-29 15:25:36,920 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | [chan 0] Max packet in: 32768 bytes
+2021-08-29 15:25:36,950 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | [chan 0] Max packet out: 4096 bytes
+2021-08-29 15:25:36,950 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | Secsh channel 0 opened.
+2021-08-29 15:25:36,981 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | [chan 0] Sesch channel 0 request ok
+2021-08-29 15:25:37,019 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | [chan 0] Sesch channel 0 request ok
+2021-08-29 15:25:41,035 p=386 u=ahmedaljawad n=ansible | ok: [172.29.129.100]
+2021-08-29 15:25:41,044 p=386 u=ahmedaljawad n=ansible | TASK [configure top level configuration] ********************************************************************************************************
+2021-08-29 15:25:45,060 p=386 u=ahmedaljawad n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running
+configuration on device
+
+2021-08-29 15:25:45,061 p=386 u=ahmedaljawad n=ansible | changed: [172.29.129.100]
+2021-08-29 15:25:45,081 p=386 u=ahmedaljawad n=ansible | TASK [Save output to /tmp] **********************************************************************************************************************
+2021-08-29 15:25:48,647 p=386 u=ahmedaljawad n=ansible | changed: [172.29.129.100]
+2021-08-29 15:25:48,650 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | [chan 0] EOF sent (0)
+2021-08-29 15:25:48,653 p=386 u=ahmedaljawad n=ansible | PLAY RECAP **************************************************************************************************************************************
+2021-08-29 15:25:48,653 p=386 u=ahmedaljawad n=ansible | 172.29.129.100             : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-29 15:25:48,654 p=386 u=ahmedaljawad n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-29 15:25:48,690 p=456 u=ahmedaljawad n=p=456 u=ahmedaljawad | paramiko [172.29.129.100] | EOF in transport thread
+2021-08-29 15:25:48,754 p=456 u=ahmedaljawad n=ansible | shutdown complete
